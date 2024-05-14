@@ -4,6 +4,7 @@ import SharedRouter from './shared/SharedRouter';
 import UserRouter from './user/UserRouter';
 import VendorRouter from './vendor/VendorRouter';
 import AdminRouter from './admin/AdminRouter';
+import Footer from './shared/Footer';
 
 const App = () => {
   return (
@@ -16,9 +17,7 @@ const App = () => {
           <Route path='/*' element={<SharedRouter />} />
         </Routes>
       </BrowserRouter>
-      <footer>
-        aaaaaaaa
-      </footer>
+      <Footer />
     </>
   );
 }
